@@ -1,0 +1,71 @@
+ IN       -addstep [:addstep] add co-scheduled step
+ IN       -altcfgdir [:] alternate config dir
+ IN       -args [:] arguments for job script
+ IN       -as [:] submit job as another user
+ IN       -c [1:1] same as cpus
+ IN       -clone [0:100] max number of clones (0=none) 
+ IN       -cm [:] memory (K/M/G bytes)
+ IN       -coschedule [no:yes] coscheduled job
+ IN       -cpus [:] processes(MxN) and cpus/process(O) MxNxO 
+ IN       -custom [:] custom parameter for sys config
+ IN       -d [eccc-ppp4:eccc-ppp4] synonym for mach 
+ IN       -display [:] X windows display
+ IN       -e [:e] controls -e flag
+ IN       -epilog [:] job epilog
+ IN       -firststep [:lajob_steps] sum of previous job steps
+ IN       -geom [:AUTO] MPI geometry file
+ IN       -image [:] OS image to run job (if supported)
+ IN       -immediate [:immediate] do not batch, use ssh with batch environment
+ IN       -iojob [1:5] IO weight (0-9) 0=none, 9=IO hog
+ IN       -jn [:] job name
+ IN       -jobcfg [:] job configuration commands
+ IN       -jobfile [/dev/null:] name of file to submit
+ IN       -jobtar [lajob:lajob] name of tar file from nosubmit
+ IN       -keep [:keep] keep job and script file at end of run
+ IN       -l [no:yes] job already has wrappers
+ IN       -laststep [:laststep] last co-scheduled step
+ IN       -listing [/home/phc001/listings:/home/phc001/tmp]  directory for listings 
+ IN       -m [:] same as cm
+ IN       -mach [:]  target machine 
+ IN       -mail [:philippe.carphin2@canada.ca] email address
+ IN       -mpi [:mpi]  MPI job 
+ IN       -node [:] job addressing
+ IN       -noendwrap [y:n] job end signal not required
+ IN       -norerun [no:yes] declare that the job is not rerunnable
+ IN       -norset [no:yes] do not use cpu resource sets for task binding (LoadLeveler only)
+ IN       -nosubmit [:nosubmit]  do not submit 
+ IN       -notify [error:complete] 
+ IN       -o [:] same as args
+ IN       -op [:oper] job is operational flag
+ IN       -p [:mpi] same as mpi
+ IN       -postfix [.out:none] listing postfix
+ IN       -ppid [300389:300389] 
+ IN       -preempt [:1] allow job to be preempted
+ IN       -prefix [NoNe:MaChInEcLaSs] listing prefix
+ IN       -prio [:] batch system specific job priority
+ IN       -project [:] batch system specific project
+ IN       -prolog [:] job prolog
+ IN       -q [:] same as queue
+ IN       -queue [:] specify a specific queue/class
+ IN       -resid [:] LoadLeveler reservation id
+ IN       -rsrc [:] set of needed resources
+ IN       -retries [3:3] set of maximum number of retries
+ IN       -seqno [1:1] sequence number of first job (clones) 
+ IN       -share [:s] can share node and/or be split across nodes e|s|p
+ IN       -shell [/bin/ksh:] job shell for batch job
+ IN       -smt [1:2] smt factor
+ IN       -splitstd [n:y] split stderr/stdout in listings
+ IN       -sq [:] alternate queue for submission
+ IN       -ssmuse [:] add extra environment
+ IN       -step [de_300389:] job step name
+ IN       -sys [batch:batch] system mode
+ IN       -t [:] job execution time (seconds)
+ IN       -tag [:] job tracking tag
+ IN       -threads [1:1] number of threads per cpu(sge only)
+ IN       -tmpfs [:255] fast temporary space (MB)
+ IN       -v [:1] verbose
+ IN       -w [1:1] same as t but in mins
+ IN       -waste [:100] acceptable percentage of wasted cpus
+ IN       -with [:] batch subsystem to use (GridEngine LoadLeveler UnixBatch)
+ IN       -wrapdir [/home/phc001/.ord_soumet.d/wrap:] job wrapper directories
+ IN       -xterm [:xterm] start an xterm in job
